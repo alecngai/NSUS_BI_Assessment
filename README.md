@@ -172,6 +172,8 @@ Given more time there is a few tweaks I would implement, but this just shows the
 
 ## In addition to the game history table, what other tables would you expect to see stored on the backend? Please specify the fields along with their data types.
 **a. What would be a suitable primary key to relate the various tables?**
+Primary Key and Forreign key are listed as PK and FK, and the connections are shown on the [ERD diagram above](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png). 
+
 
 ## The United Kingdom marketing manager has sent a request to the BI team to set up Tableau dashboards to monitor newly acquired customers.
 **a. Which of the tables in Question 3 would you use?** <br />
