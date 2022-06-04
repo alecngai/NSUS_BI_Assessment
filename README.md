@@ -1,14 +1,38 @@
 # NSUS_BI_Assessment
 
-## Log into your newly created account and explore the software
-a. What are your first impressions of the software? <br />
+## *Log into your newly created account and explore the software*
+**a. What are your first impressions of the software?** <br />
 
-b. What game features and promotions look interesting?
+The home screen feels like a newspaper ad section, its too overwhelming and too much data thrown into the users, I believe most users wont scroll down to even look at the other promotions. 
+Should be a filter so players are fed ads for promotions they enjoy, making it more of an enjoyable experience for the user, and a more targeted ad experience for the marketing team. 
+
+Main page, wont scale to my screen resolution, I cannot extend it or compress it width wise, this type of static app design is outdated and many games use vectors to overcome this issue. 
+
+There is still a live chat option, however, no live chat support is actually available. 
+
+On the Network Status section, if you click send report, it does nothing except prepare report then hangs, they should remove this if it is not functional. 
+
+App is very responsive, loading into games is quick and efficent. 
+
+**b. What game features and promotions look interesting?**
 
 ## Please share a brief summary detailing your experience, including:
 a. What was your favourite game? Why?  <br />
-Spin & Gold
+Spin & Gold, All in or Fold
+
+Both of these gamemodes imcoprate two things which I enjoy, spinning wheel, which makes the user feel like he has the potential to win big, which gives more "value" to the users buy-in. I personally prefer Hold'em, and all in or fold allows you to have a simplified game, which interms is more high risk, but the simplicity allows it the be played in very fast rotation. 
+
+Rush and Cash
+
+This allows the user to move between tables, low down time, is a middle ground between spin & gold and all in or fold, these three gametypes target a variety of players, from simple thinkers, to logical calculators. 
+
 b. What was your least favourite game? Why? <br />
+
+Battle Royale
+
+Like with most battle royale games, the time comitment is larger, meaning you will have to wait for players, and play a multitude of rounds, it simulates a tournament which is a cool concept, however, I personally enjoy more quicker paced games. 
+
+
 c. Were there any surprising or unexpected parts you came across? <br />
 d. Were there parts of the experience you found confusing? 
 
