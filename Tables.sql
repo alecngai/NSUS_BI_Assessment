@@ -61,7 +61,7 @@ GO
 
 CREATE TABLE "Hand_History" (
     "Hand_ID" String  NOT NULL ,
-    "Game_ID" Sting  NOT NULL ,
+    "Game_ID" String  NOT NULL ,
     "Hand_start" Datetime  NOT NULL ,
     "Hand_end" Datetime  NOT NULL ,
     "Hero_ID" Int  NOT NULL ,
@@ -91,6 +91,8 @@ CREATE TABLE "Hand_History" (
     "Jackpot" Float  NOT NULL ,
     "Bingo" Float  NOT NULL ,
     "Board" String  NOT NULL ,
+    "All-in-EV" Float  NOT NULL ,
+    "Winnloss" Float  NOT NULL ,
     CONSTRAINT "pk_Hand_History" PRIMARY KEY (
         "Hand_ID"
     )
