@@ -18,6 +18,8 @@ Game History
 b. What fields would you expect to see in this table? */* c. Please also include the data type of each field.
 <br />
 
+![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png)
+
 ### Players as P
 
 - Player_ID PK Int 
