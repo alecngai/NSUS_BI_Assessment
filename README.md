@@ -163,6 +163,8 @@ there is feature engineering, which would allow us to remove uneeded columns, or
 ## Using the fields you provide in Q1, populate a hypothetical game history table with the results of your $0.25 Spin & Gold from Part 1 of the assessment.
 **a. Provide a sample of a few row entries in the table, using the fields you came up with as columns**
 
+![Game_History_EX]()
+
 ## In addition to the game history table, what other tables would you expect to see stored on the backend? Please specify the fields along with their data types.
 **a. What would be a suitable primary key to relate the various tables?**
 
