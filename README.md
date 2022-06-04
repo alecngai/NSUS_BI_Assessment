@@ -12,13 +12,17 @@ d. Were there parts of the experience you found confusing?
 
 ## Your gameplay from Part 1 is stored in our game history database.
 a. What tables would you expect to be populated?<br />
+Players <br />
 Session History <br />
-Game History 
+Game History <br />
+Hand History
 
 b. What fields would you expect to see in this table? */* c. Please also include the data type of each field.
 <br />
 
 ![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD_Final.png)
+
+Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Tables.sql) for the tables that will be populated 
 
 ### Players as P
 
