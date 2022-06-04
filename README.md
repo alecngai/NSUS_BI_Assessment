@@ -54,11 +54,11 @@ Session History <br />
 Game History <br />
 Hand History
 
-I believe there are more tables, for example, a finance table dealing with all the players' deposits/withdrawals, NGR, GGR, etc. For simplicity, I will focus on game history. 
+I believe there are more tables, for example, a finance table dealing with all the players' deposits/withdrawals, NGR, GGR, etc. For the Finance table, I expect some subtables; however, for simplicity, I will only use one table to signify the finance data. 
 
 Another assumption is that there are multiple tables for specific game modes because game modes like Battle Royal require you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have a master table with a column consisting of nulls if the player never plays battle royale. 
 
-For Finance table, I expect some subtables however, for simplicity I will only use one table to signify the finance data. 
+
 
 **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
