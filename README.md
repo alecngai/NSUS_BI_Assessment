@@ -3,49 +3,48 @@
 ## *Log into your newly created account and explore the software*
 **a. What are your first impressions of the software?** <br />
 
-The home screen feels like a newspaper ad section, its too overwhelming and too much data thrown into the users, I believe most users wont scroll down to even look at the other promotions. 
-Should be a filter so players are fed ads for promotions they enjoy, making it more of an enjoyable experience for the user, and a more targeted ad experience for the marketing team. 
+The home screen feels like a newspaper ad section; it's too overwhelming, and since so much data is thrown into the users, I believe most users won't scroll down to even look at the other promotions. 
+Should be a filter so players are fed ads for promotions they enjoy, making it more of an enjoyable experience for the user and a more targeted ad experience for the marketing team. 
 
-Main page, wont scale to my screen resolution, I cannot extend it or compress it width wise, this type of static app design is outdated and many games use vectors to overcome this issue. 
+The main page won't scale to my screen resolution. I cannot extend it or compress its width-wise, this type of static app design is outdated, and many games use vectors to overcome this issue. 
 
-There is still a live chat option, however, no live chat support is actually available. 
+There is still a live chat option. However, no live chat support is available. 
 
-On the Network Status section, if you click send report, it does nothing except prepare report then hangs, they should remove this if it is not functional. 
+If you click to send a report on the Network Status section, it does nothing except prepare the report, then hangs. They should remove this if it is not functional. 
 
-App is very responsive, loading into games is quick and efficent. 
+The app is responsive, and loading into games is quick and efficient. 
 
 **b. What game features and promotions look interesting?**
 
 Daily freebie is a great way to add engagement to the game. 
 
-Pokercraft is a great tool, allowing players to track their progress and be able to view their playstyle 
+Pokercraft is a great tool, allowing players to track their progress and be able to view their playstyle.
 
 ## *Please share a brief summary detailing your experience, including:*
 **a. What was your favourite game? Why?**  <br />
 Spin & Gold, All in or Fold
 
-Both of these gamemodes imcoprate two things which I enjoy, spinning wheel, which makes the user feel like he has the potential to win big, which gives more "value" to the users buy-in. I personally prefer Hold'em, and all in or fold allows you to have a simplified game, which interms is more high risk, but the simplicity allows it the be played in very fast rotation. 
+Both of these game modes incorporate two things which I enjoy, the spinning wheel, which makes the user feel like he has the potential to win big, which gives more "value" to the users' buy-in. I prefer to play Hold'em, and all in or fold allows you to have a simplified game, which is a more high risk, but the simplicity will enable it to be played in high-speed rotation. 
 
 Rush and Cash
 
-This allows the user to move between tables, low down time, is a middle ground between spin & gold and all in or fold, these three gametypes target a variety of players, from simple thinkers, to logical calculators. 
+This allows the user to move between tables, low down time, is a middle ground between spin & gold and all in or fold; these three game types target various players, from superficial thinkers to logical calculators. 
 
 **b. What was your least favourite game? Why?** <br />
 
 Battle Royale
 
-Like with most battle royale games, the time comitment is larger, meaning you will have to wait for players, and play a multitude of rounds, it simulates a tournament which is a cool concept, however, I personally enjoy more quicker paced games. 
-
+Like with most battle royale games, the time commitment is more extensive. You will have to wait for players and play many rounds; it simulates a tournament which is an excellent concept; however, I enjoy quicker-paced games. 
 
 **c. Were there any surprising or unexpected parts you came across?** <br />
 
-Was surprising how many mechanics are tide into each game mode: leaderboards, jackpots, insurance, fish buffet, bingo, wheel spins, etc. Allowing users to experience alot of value per game, this type of progression is atune to clicker games, which keep allowing user to have some sort of progression, and is an affective and addictive gameplay loop.  
+It was surprising how many mechanics are tied into each game mode: leaderboards, jackpots, insurance, fish buffet, bingo, wheel spins, etc. Allowing users to experience a lot of value per game, this type of progression is attuned to clicker games, allowing the user to have some progression. It is a compelling and addictive gameplay loop.   
 
 **d. Were there parts of the experience you found confusing?**
 
-The ticket section is not sorted, and could be compressed and simplified. When you finish a game, and it says play again, it does not specify if you are using tickets, *T$*, *C$* or USD. 
+The ticket section is not sorted and could be compressed and simplified. When you finish a game and say play again, it does not specify if you are using tickets, *T$*, *C$* or USD. 
 
-Insurance per gamemode is different, meaning its up to the user to be more informed onto its use, however, the game makes it very easy for the player to use insurance without explaining it, there should be a checker to quickly explain insurance to users the first time they use it. 
+Insurance per game mode is different, meaning it's up to the user to be more informed about its use; however, the game makes it very easy for the player to use insurance without explaining it. There should be a checker to quickly illustrate insurance to users the first time they use it. 
 
 ## *Your gameplay from Part 1 is stored in our game history database.*
 **a. What tables would you expect to be populated?** <br />
@@ -54,9 +53,9 @@ Session History <br />
 Game History <br />
 Hand History
 
-I believe there are more tables for example, a finance table dealing with all the players deposits/withdrawals, NGR, GGR, Etc, but for simplicity I will focus on game history. 
+I believe there are more tables, for example, a finance table dealing with all the players' deposits/withdrawals, NGR, GGR, etc. For simplicity, I will focus on game history. 
 
-Another assumption is there are multiple tables, for certain gamemodes, this is because gamemodes like Batttle Royal recquire you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have an master table with a column consisting of nulls if the player never plays battle royale. 
+Another assumption is that there are multiple tables for specific game modes because game modes like Battle Royal require you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have a master table with a column consisting of nulls if the player never plays battle royale. 
 
 **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
@@ -168,17 +167,17 @@ There is feature engineering, which would allow us to remove unneeded columns or
 I used python [code used to generate fake data](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Creating_Tables.ipynb)
 to generate 5000 rows of a fake game history data and stored it in [CSV format](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Resources/Fake_Game_History.csv). 
 
-Given more time, there is a few tweaks I would implement, but this just shows the rough capabilities.
+Given more time, I would implement a few tweaks, but this shows the rough capabilities.
 
 Game_ID is always unique in this table. <br />
-Session_ID can be repeating as some games are played together in one session depending on the game mode. <br />
-Game_Start, Should show the time in UTC exactly when the game starts. <br />
+Session_ID can be repeated as some games are played together in one session, depending on the game mode. <br />
+Game_Start Should show the time in UTC exactly when the game starts. <br />
 Game_duration shows the time round lasted. <br />
 Hole_Card is the started cards of the player. <br />
-Hand_Value is the value of the players hand at the end of the flop. <br />
-Winner assigns a player who won the pot, this string can be pulled from Players table using player ID. <br />
-Pot is a float value determing total amount of money in the pot. <br />
-WinLoss shows the players win loss value. <br />
+Hand_Value is the value of the player's hand at the end of the flop. <br />
+Winner assigns a player who won the pot, and this string can be pulled from the Players table using player ID. <br />
+Pot is a float value determining the total amount of money in the pot. <br />
+WinLoss shows the players' win-loss value. <br />
 Insurance shows insurance won on the hand.  <br />
 
 
