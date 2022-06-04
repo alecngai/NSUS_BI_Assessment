@@ -205,10 +205,22 @@ Primary Key and Foreign key are listed as [PK and FK](#players-as-p), and the co
 
 I would use Session_History, Players, and the finance table. 
 
-Our goal is to monitor newly acquired customers, therefore we need the sign up date of the user, so players table is crucial. 
+Our goal is to monitor newly acquired customers; therefore, we need the user's sign-up date, so the players' table is crucial. We also want to look at their gameplay habits and depositing/withdrawal activity, so both Session_history and finance tables are informative. 
 
 Next is the definition of monitoring players,  
-First is to log total concurrent player base, per day, and also show and area chart below showing fresh players, we can define fresh players if they have signed up within the couple of days. 
+The first is to log the total concurrent player base per day and show an area chart below showing fresh players; we can define new players if they have signed up within a couple of days. 
+I have chosen within a couple of days since this is a per-day chart. We can also have a filter for players who signed up within the month, the past year or the past year+. This will allow us to see if most of the players currently on the platform are legacy players or newer players. Another filter is a game type; then, we can see what the majority of the player base is playing to understand which game modes are enticing to new players. 
+
+Next is a calculated field of the percent difference per day; this gives the viewer a bit more insight into the ratio of growth or decline of new players per day. 
+
+This can be achieved by using data as a discontinuous feature in Columns, while we have a continuous feature of daily active players and filtered active players in rows.
+
+Daily active players are defined as players who logged in and have at least one gameplay, including staking. 
+
+Percent difference can be a label, and colour can be assigned a filter dimension if the row is active or new. 
+
+
+
 
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 
