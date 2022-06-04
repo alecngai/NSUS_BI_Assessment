@@ -43,7 +43,7 @@ Was surprising how many mechanics are tide into each game mode: leaderboards, ja
 
 **d. Were there parts of the experience you found confusing?**
 
-The ticket section is not sorted, and could be compressed and simplified. When you finish a game, and it says play again, it does not specify if you are using tickets, T$, C$ or USD. 
+The ticket section is not sorted, and could be compressed and simplified. When you finish a game, and it says play again, it does not specify if you are using tickets, *T$*, *C$* or USD. 
 
 Insurance per gamemode is different, meaning its up to the user to be more informed onto its use, however, the game makes it very easy for the player to use insurance without explaining it, there should be a checker to quickly explain insurance to users the first time they use it. 
 
