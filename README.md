@@ -230,11 +230,11 @@ This dashboard will show the health of the current ecosystem, and we can visuall
 
 Next is the financial dashboard; we want to visually see if the new customers are depositing/withdrawing and what game modes they are spending their money on. 
 
-This will show how much the users are depositing vs withdrawing per day, utilizing the finance chart and players, we can find the count of player and the amount they are depositing vs withdrawing and filter by players who are new, month, or year, etc. 
+This will show how much the users are depositing vs withdrawing per day. Utilizing the finance chart and players, we can find the count of players and the amount they are depositing vs withdrawing and filter by new players, month, year, etc. 
 
-Another filter to show how much of those depositted funds are lost to the house, rake, fee, so we can track how much money GGPoker earned that day from this market. 
+Another filter shows how much of those deposited funds are lost to the house, rake, and fee, so we can track how much money GGPoker earned that day from this market. 
 
-This will give us insight on the rate of deposits of players, if our game is enganging and enticing enough for them to want to deposit more, in addition, we can see how much money we are making off the UK market that day, per user base. 
+This will give us insight into the rate of players' deposits if our game is engaging and enticing enough for them to want to deposit more. In addition, we can see how much money we are making off the UK market that day, per-user base. 
 
 
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
