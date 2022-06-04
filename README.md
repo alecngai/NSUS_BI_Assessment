@@ -153,11 +153,11 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 
 **d. What are some challenges you might expect over time as the # of rows increase exponentially**
 
-As the data increases, it comes with the challenge of processing more data. This can be solved with acquiring more instances, or data compression. Each comes with its own challanges, acquiring more instances is extremely costly, while as data compression can reduce processing cost, it also comes into question the integrity of the data may get compormised with compression. 
+As the data increases, it comes with the challenge of processing more data. This can be solved by acquiring more instances or data compression. Each comes with its challenges; acquiring more instances is exceptionally costly. While data compression can reduce processing costs, it also questions the integrity of the data that may get compromised with compression. 
 
-Next is data storage, for data that is not used as frequenct can load onto more cold storage servers like RedShift, While you can use Auora or DynanmoDB for data that needs to be pulled frequently.
+Next is data storage; data that is not utilized as frequently can load onto more cold storage servers like RedShift, While you can use Aurora or DynanmoDB for data that needs to be pulled oftentimes.
 
-there is feature engineering, which would allow us to remove uneeded columns, or combine multiple columns into one, which will greatly reduce the size of the database. 
+There is feature engineering, which would allow us to remove unneeded columns or combine multiple columns into one, which will significantly reduce the size of the database. 
 
 
 ## Using the fields you provide in Q1, populate a hypothetical game history table with the results of your $0.25 Spin & Gold from Part 1 of the assessment.
@@ -170,16 +170,16 @@ to generate 5000 rows of a fake game history data and stored it in [CSV format](
 
 Given more time, there is a few tweaks I would implement, but this just shows the rough capabilities.
 
-Game_ID is always unique in this table.
-Session_ID can be repeating as some games are played together in one session depending on the game mode.
-Game_Start, Should show the time in UTC exactly when the game starts.
-Game_duration shows the time round lasted.
-Hole_Card is the started cards of the player.
-Hand_Value is the value of the players hand at the end of the flop.
-Winner assigns a player who won the pot, this string can be pulled from Players table using player ID
-Pot is a float value determing total amount of money in the pot.
-WinLoss shows the players win loss value.
-Insurance shows insurance won on the hand. 
+Game_ID is always unique in this table. <br />
+Session_ID can be repeating as some games are played together in one session depending on the game mode. <br />
+Game_Start, Should show the time in UTC exactly when the game starts. <br />
+Game_duration shows the time round lasted. <br />
+Hole_Card is the started cards of the player. <br />
+Hand_Value is the value of the players hand at the end of the flop. <br />
+Winner assigns a player who won the pot, this string can be pulled from Players table using player ID. <br />
+Pot is a float value determing total amount of money in the pot. <br />
+WinLoss shows the players win loss value. <br />
+Insurance shows insurance won on the hand.  <br />
 
 
 ## In addition to the game history table, what other tables would you expect to see stored on the backend? Please specify the fields along with their data types.
