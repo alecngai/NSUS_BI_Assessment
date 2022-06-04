@@ -1,5 +1,4 @@
-﻿
-CREATE TABLE "Players" (
+﻿CREATE TABLE "Players" (
     "Player_ID" Int  NOT NULL ,
     "Email_Address" String  NOT NULL ,
     "Mobile_Number" String  NOT NULL ,
@@ -52,6 +51,8 @@ CREATE TABLE "Game_History" (
     "Winner" String  NOT NULL ,
     "Pot" Float  NOT NULL ,
     "Winloss" Float  NOT NULL ,
+    "Leaderboard_points" Float  NOT NULL ,
+    "Insurance" Float  NOT NULL ,
     CONSTRAINT "pk_Game_History" PRIMARY KEY (
         "Game_ID"
     )
@@ -79,6 +80,7 @@ CREATE TABLE "Hand_History" (
     "Small_blind" Int  NOT NULL ,
     "Big_blind" Int  NOT NULL ,
     "Hole_Cards" String  NOT NULL ,
+    "Hand_Value" String  NOT NULL ,
     "Pre_Flop_Action" String  NOT NULL ,
     "Flop_Action" String  NOT NULL ,
     "Turn_Action" String  NOT NULL ,
@@ -92,7 +94,8 @@ CREATE TABLE "Hand_History" (
     "Bingo" Float  NOT NULL ,
     "Board" String  NOT NULL ,
     "All-in-EV" Float  NOT NULL ,
-    "Winnloss" Float  NOT NULL ,
+    "WinLoss" Float  NOT NULL ,
+    "Insurance" Float  NOT NULL ,
     CONSTRAINT "pk_Hand_History" PRIMARY KEY (
         "Hand_ID"
     )
@@ -143,4 +146,3 @@ GO
 ALTER TABLE "Hand_History" ADD CONSTRAINT "fk_Hand_History_Big_blind" FOREIGN KEY("Big_blind")
 REFERENCES "Players" ("Player_ID")
 GO
-

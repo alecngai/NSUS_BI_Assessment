@@ -2,13 +2,17 @@
 
 ## Log into your newly created account and explore the software
 a. What are your first impressions of the software? <br />
+
 b. What game features and promotions look interesting?
 
 ## Please share a brief summary detailing your experience, including:
 a. What was your favourite game? Why?  <br />
+Spin & Gold
 b. What was your least favourite game? Why? <br />
 c. Were there any surprising or unexpected parts you came across? <br />
 d. Were there parts of the experience you found confusing? 
+
+The ticket section is not sorted, and could be compressed and simplified. When you finish a game, and it says play again, it does not specify if you are using tickets, T$, C$ or USD. 
 
 ## Your gameplay from Part 1 is stored in our game history database.
 a. What tables would you expect to be populated?<br />
@@ -17,10 +21,16 @@ Session History <br />
 Game History <br />
 Hand History
 
+I believe there are more tables for example, a finance table dealing with all the players deposits/withdrawals, NGR, GGR, Etc, but for simplicity I will focus on game history. 
+
+Another assumption is there are multiple tables, for certain gamemodes, this is because gamemodes like Batttle Royal recquire you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have an master table with a column consisting of nulls if the player never plays battle royale. 
+
+There should also be smaller tables for reference example Hand Value is derived from a 
+
 b. What fields would you expect to see in this table? */* c. Please also include the data type of each field.
 <br />
 
-![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD_Final.png)
+![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png)
 
 Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Tables.sql) for the tables that will be populated 
 
@@ -68,6 +78,7 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 - Winner String
 - Pot Float
 - Winloss Float
+- Insurance Float
 
 
 ### Hand_History as H
@@ -91,6 +102,7 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 - Small_blind Int FK >- P.Player_ID
 - Big_blind Int FK >- P.Player_ID
 - Hole_Cards String
+- Hand Value String
 - Pre_Flop_Action String
 - Flop_Action String
 - Turn_Action String
@@ -105,6 +117,7 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 - Board String
 - All-in-Ev Float
 - Winloss Float
+- Insurance Float
 
 
 d. What are some challenges you might expect over time as the # of rows increase
