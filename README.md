@@ -81,6 +81,18 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 - Tags String
 - Maker String
 
+### Finance as F
+
+- Player_ID Int FK >- P.Player_ID
+- Date Datetime
+- Type String
+- C$ Float
+- T$ Float
+- Amount Float
+- Balance Float
+- Description String
+- Transaction_ID String
+
 ### Session_History as S
 
 - Session_ID PK Int
@@ -190,6 +202,13 @@ Primary Key and Forreign key are listed as PK and FK, and the connections are sh
 
 ## The United Kingdom marketing manager has sent a request to the BI team to set up Tableau dashboards to monitor newly acquired customers.
 **a. Which of the tables in Question 3 would you use?** <br />
+
+I would use Session_History, Players, and a finance table. 
+
+Our goal is to monitor newly acquired customers, therefore we need the sign up date of the user, so players table is crucial. 
+
+Next is the definition of monitoring players, 
+
 **b. Describe the dashboard(s) you would create.**<br />
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 

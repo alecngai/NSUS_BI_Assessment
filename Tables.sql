@@ -20,6 +20,20 @@
 
 GO
 
+CREATE TABLE "Finance" (
+    "Player_ID" Int  NOT NULL ,
+    "Date" Datetime  NOT NULL ,
+    "Type" String  NOT NULL ,
+    "C$" Float  NOT NULL ,
+    "T$" Float  NOT NULL ,
+    "Amount" Float  NOT NULL ,
+    "Balance" Float  NOT NULL ,
+    "Description" String  NOT NULL ,
+    "Transaction_ID" String  NOT NULL 
+)
+
+GO
+
 CREATE TABLE "Session_History" (
     "Player_ID" Int  NOT NULL ,
     "Session_ID" String  NOT NULL ,
@@ -43,7 +57,7 @@ CREATE TABLE "Session_History" (
 GO
 
 CREATE TABLE "Game_History" (
-    "Game_ID" String  NOT NULL ,
+    "Hand_ID" String  NOT NULL ,
     "Session_ID" String  NOT NULL ,
     "Game_start" Datetime  NOT NULL ,
     "Hole_Card" String  NOT NULL ,
@@ -54,7 +68,7 @@ CREATE TABLE "Game_History" (
     "Leaderboard_points" Float  NOT NULL ,
     "Insurance" Float  NOT NULL ,
     CONSTRAINT "pk_Game_History" PRIMARY KEY (
-        "Game_ID"
+        "Hand_ID"
     )
 )
 
@@ -62,7 +76,6 @@ GO
 
 CREATE TABLE "Hand_History" (
     "Hand_ID" String  NOT NULL ,
-    "Game_ID" String  NOT NULL ,
     "Hand_start" Datetime  NOT NULL ,
     "Hand_end" Datetime  NOT NULL ,
     "Hero_ID" Int  NOT NULL ,
@@ -95,12 +108,13 @@ CREATE TABLE "Hand_History" (
     "Board" String  NOT NULL ,
     "All-in-EV" Float  NOT NULL ,
     "WinLoss" Float  NOT NULL ,
-    "Insurance" Float  NOT NULL ,
-    CONSTRAINT "pk_Hand_History" PRIMARY KEY (
-        "Hand_ID"
-    )
+    "Insurance" Float  NOT NULL 
 )
 
+GO
+
+ALTER TABLE "Finance" ADD CONSTRAINT "fk_Finance_Player_ID" FOREIGN KEY("Player_ID")
+REFERENCES "Players" ("Player_ID")
 GO
 
 ALTER TABLE "Session_History" ADD CONSTRAINT "fk_Session_History_Player_ID" FOREIGN KEY("Player_ID")
@@ -111,8 +125,8 @@ ALTER TABLE "Game_History" ADD CONSTRAINT "fk_Game_History_Session_ID" FOREIGN K
 REFERENCES "Session_History" ("Session_ID")
 GO
 
-ALTER TABLE "Hand_History" ADD CONSTRAINT "fk_Hand_History_Game_ID" FOREIGN KEY("Game_ID")
-REFERENCES "Game_History" ("Game_ID")
+ALTER TABLE "Hand_History" ADD CONSTRAINT "fk_Hand_History_Hand_ID" FOREIGN KEY("Hand_ID")
+REFERENCES "Game_History" ("Hand_ID")
 GO
 
 ALTER TABLE "Hand_History" ADD CONSTRAINT "fk_Hand_History_Hero_ID" FOREIGN KEY("Hero_ID")
@@ -146,3 +160,4 @@ GO
 ALTER TABLE "Hand_History" ADD CONSTRAINT "fk_Hand_History_Big_blind" FOREIGN KEY("Big_blind")
 REFERENCES "Players" ("Player_ID")
 GO
+
