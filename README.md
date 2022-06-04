@@ -201,15 +201,15 @@ Primary Key and Foreign key are listed as [PK and FK](#players-as-p), and the co
 
 
 ## The United Kingdom marketing manager has sent a request to the BI team to set up Tableau dashboards to monitor newly acquired customers.
-**a. Which of the tables in Question 3 would you use?** <br />
+**a. Which of the tables in Question 3 would you use? // b. Describe the dashboard(s) you would create.**<br /> 
 
-I would use Session_History, Players, and a finance table. 
+I would use Session_History, Players, and the finance table. 
 
 Our goal is to monitor newly acquired customers, therefore we need the sign up date of the user, so players table is crucial. 
 
-Next is the definition of monitoring players, 
+Next is the definition of monitoring players,  
+First is to log total concurrent player base, per day, and also show and area chart below showing fresh players, we can define fresh players if they have signed up within the couple of days. 
 
-**b. Describe the dashboard(s) you would create.**<br />
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 
 ## The UK team was elated with your acquisition dashboard and has requested a Life Time Value model to project the value of newly signed up customers.
