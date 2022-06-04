@@ -49,6 +49,7 @@ Insurance per game mode is different, meaning it's up to the user to be more inf
 ## *Your gameplay from Part 1 is stored in our game history database.*
 **a. What tables would you expect to be populated?** <br />
 Players <br />
+Finance <br />
 Session History <br />
 Game History <br />
 Hand History
@@ -56,6 +57,8 @@ Hand History
 I believe there are more tables, for example, a finance table dealing with all the players' deposits/withdrawals, NGR, GGR, etc. For simplicity, I will focus on game history. 
 
 Another assumption is that there are multiple tables for specific game modes because game modes like Battle Royal require you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have a master table with a column consisting of nulls if the player never plays battle royale. 
+
+For Finance table, I expect some subtables however, for simplicity I will only use one table to signify the finance data. 
 
 **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
