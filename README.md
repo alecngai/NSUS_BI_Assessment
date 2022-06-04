@@ -170,6 +170,18 @@ to generate 5000 rows of a fake game history data and stored it in [CSV format](
 
 Given more time, there is a few tweaks I would implement, but this just shows the rough capabilities.
 
+Game_ID is always unique in this table.
+Session_ID can be repeating as some games are played together in one session depending on the game mode.
+Game_Start, Should show the time in UTC exactly when the game starts.
+Game_duration shows the time round lasted.
+Hole_Card is the started cards of the player.
+Hand_Value is the value of the players hand at the end of the flop.
+Winner assigns a player who won the pot, this string can be pulled from Players table using player ID
+Pot is a float value determing total amount of money in the pot.
+WinLoss shows the players win loss value.
+Insurance shows insurance won on the hand. 
+
+
 ## In addition to the game history table, what other tables would you expect to see stored on the backend? Please specify the fields along with their data types.
 **a. What would be a suitable primary key to relate the various tables?**
 
