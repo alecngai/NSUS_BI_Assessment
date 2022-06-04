@@ -243,13 +243,17 @@ This will give us insight into the rate of players' deposits if our game is enga
 
 - Evaluate the ROI of the campaign.
 
-- Cost per Lead, showing us how much it cost us to acquire a new customer, this can show efficency of the marketing ad.
+- Cost per Lead, showing us how much it costs us to acquire a new customer, can show the efficiency of the marketing ad.
 
-- Sign ups using the affliate code, or after the add campaign has launched. 
+- Sign-ups using the affiliate code or after the ad campaign has launched. 
 
-- Engagment of the player base, retention.
+- Engagement of the player base, retention.
 
 - Churn of players located in that region to see if churn is affected by the marketing campaign. 
+
+- Customer Lifetime Value, to see if there is an increase due to the campaign
+
+- Brand Awareness, we can see if our social media in that region has grown, or on Reddit can trace the IP of users to see if we have more community engagement after the campaign. 
 
 ## The UK team was elated with your acquisition dashboard and has requested a Life Time Value model to project the value of newly signed up customers.
 **a. How would you design such a model?**<br />
