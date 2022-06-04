@@ -219,6 +219,14 @@ Daily active players are defined as players who logged in and have at least one 
 
 Percent difference can be a label, and colour can be assigned a filter dimension if the row is active or new. 
 
+The view of this chart will be two area charts overlapping, the back chart will consists of all filtered players, new, one month, etc, while the front one will show new as default. Can have perentage change as a line graph, which we will use a dual axis to overlap the line graph onto each other. 
+
+This dashboard will show the health of the current ecosystem, we can visually see overall growth, and recent growth. 
+
+---
+
+Next is financial dashboard, we want to visually see if the new customers are depositing and what gamemodes they are spending their money on. 
+
 
 
 
