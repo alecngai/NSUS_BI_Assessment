@@ -58,8 +58,6 @@ I believe there are more tables for example, a finance table dealing with all th
 
 Another assumption is there are multiple tables, for certain gamemodes, this is because gamemodes like Batttle Royal recquire you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have an master table with a column consisting of nulls if the player never plays battle royale. 
 
-There should also be smaller tables for reference example Hand Value is derived from a 
-
 **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
 
@@ -154,6 +152,13 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 
 
 **d. What are some challenges you might expect over time as the # of rows increase exponentially**
+
+As the data increases, it comes with the challenge of processing more data. This can be solved with acquiring more instances, or data compression. Each comes with its own challanges, acquiring more instances is extremely costly, while as data compression can reduce processing cost, it also comes into question the integrity of the data may get compormised with compression. 
+
+Next is data storage, for data that is not used as frequenct can load onto more cold storage servers like RedShift, While you can use Auora or DynanmoDB for data that needs to be pulled frequently.
+
+there is feature engineering, which would allow us to remove uneeded columns, or combine multiple columns into one, which will greatly reduce the size of the database. 
+
 
 ## Using the fields you provide in Q1, populate a hypothetical game history table with the results of your $0.25 Spin & Gold from Part 1 of the assessment.
 **a. Provide a sample of a few row entries in the table, using the fields you came up with as columns**
