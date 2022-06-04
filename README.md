@@ -58,7 +58,7 @@ I believe there are more tables for example, a finance table dealing with all th
 
 Another assumption is there are multiple tables, for certain gamemodes, this is because gamemodes like Batttle Royal recquire you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have an master table with a column consisting of nulls if the player never plays battle royale. 
 
-### **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
+#### **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.****b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
 
 ![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png)
@@ -173,7 +173,7 @@ Given more time, there is a few tweaks I would implement, but this just shows th
 ## In addition to the game history table, what other tables would you expect to see stored on the backend? Please specify the fields along with their data types.
 **a. What would be a suitable primary key to relate the various tables?**
 
-Primary Key and Forreign key are listed as PK and FK, and the connections are shown on the [ERD diagram above](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png). 
+Primary Key and Forreign key are listed as PK and FK, and the connections are shown on the [ERD diagram above](b. What fields would you expect to see in this table? / c. Please also include the data type of each field.****b. What fields would you expect to see in this table? / c. Please also include the data type of each field.). 
 
 
 ## The United Kingdom marketing manager has sent a request to the BI team to set up Tableau dashboards to monitor newly acquired customers.
