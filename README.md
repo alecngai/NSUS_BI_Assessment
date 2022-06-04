@@ -104,7 +104,7 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 - Bingo Float
 - Board String
 - All-in-Ev Float
-- Winloss
+- Winloss Float
 
 
 d. What are some challenges you might expect over time as the # of rows increase
