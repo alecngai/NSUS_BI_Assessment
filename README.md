@@ -42,7 +42,7 @@ It was surprising how many mechanics are tied into each game mode: leaderboards,
 
 **d. Were there parts of the experience you found confusing?**
 
-The ticket section is not sorted and could be compressed and simplified. When you finish a game and say play again, it does not specify if you are using tickets, *T$*, *C$* or USD. 
+The [ticket section](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/Tickets.png) is not sorted and could be compressed and simplified. When you finish a game and say play again, it does not specify if you are using tickets, *T$*, *C$* or USD. 
 
 Insurance per game mode is different, meaning it's up to the user to be more informed about its use; however, the game makes it very easy for the player to use insurance without explaining it. There should be a checker to quickly illustrate insurance to users the first time they use it. 
 
@@ -100,7 +100,7 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 
 ### Game_History as G
 
-- Game_ID  String PK
+- Hand_ID  String PK
 - Session_ID String FK >- S.Session_ID
 - Game_start Datetime
 - Hole_Card String
@@ -108,13 +108,13 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 - Winner String
 - Pot Float
 - Winloss Float
+- Leaderboard Float
 - Insurance Float
 
 
 ### Hand_History as H
 
-- Hand_ID String PK
-- Game_ID String FK >- G.Game_ID
+- Hand_ID String FK >- G.Hand_ID
 - Hand_start Datetime
 - Hand_end Datetime
 - Hero_ID Int FK >- P.Player_ID
@@ -178,6 +178,7 @@ Hand_Value is the value of the player's hand at the end of the flop. <br />
 Winner assigns a player who won the pot, and this string can be pulled from the Players table using player ID. <br />
 Pot is a float value determining the total amount of money in the pot. <br />
 WinLoss shows the players' win-loss value. <br />
+Leaderboard_points is the amount of points earned towards leaderboard <br />
 Insurance shows insurance won on the hand.  <br />
 
 
