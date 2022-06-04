@@ -239,11 +239,17 @@ This will give us insight into the rate of players' deposits if our game is enga
 
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 
-Sign ups using the affliate code, or after the add campaign has launched. 
+- Monitor progress of business goals, which is to gain market share of that region.
 
-Engagment of the player base
+- Evaluate the ROI of the campaign.
 
-Churn of players located in that region to see if churn is affected by the marketing campaign. 
+- Cost per Lead, showing us how much it cost us to acquire a new customer, this can show efficency of the marketing ad.
+
+- Sign ups using the affliate code, or after the add campaign has launched. 
+
+- Engagment of the player base, retention.
+
+- Churn of players located in that region to see if churn is affected by the marketing campaign. 
 
 ## The UK team was elated with your acquisition dashboard and has requested a Life Time Value model to project the value of newly signed up customers.
 **a. How would you design such a model?**<br />
