@@ -168,6 +168,7 @@ there is feature engineering, which would allow us to remove uneeded columns, or
 I used python [code used to generate fake data](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Creating_Tables.ipynb)
 to generate 5000 rows of a fake game history data and stored it in [CSV format](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Resources/Fake_Game_History.csv). 
 
+Given more time there is a few tweaks I would implement, but this just shows the rough capabilities.
 
 ## In addition to the game history table, what other tables would you expect to see stored on the backend? Please specify the fields along with their data types.
 **a. What would be a suitable primary key to relate the various tables?**
