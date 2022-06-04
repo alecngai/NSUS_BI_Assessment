@@ -21,7 +21,7 @@ Daily freebie is a great way to add engagement to the game.
 Pokercraft is a great tool, allowing players to track their progress and be able to view their playstyle 
 
 ## *Please share a brief summary detailing your experience, including:*
-***a. What was your favourite game? Why?**  <br />
+**a. What was your favourite game? Why?**  <br />
 Spin & Gold, All in or Fold
 
 Both of these gamemodes imcoprate two things which I enjoy, spinning wheel, which makes the user feel like he has the potential to win big, which gives more "value" to the users buy-in. I personally prefer Hold'em, and all in or fold allows you to have a simplified game, which interms is more high risk, but the simplicity allows it the be played in very fast rotation. 
@@ -60,7 +60,7 @@ Another assumption is there are multiple tables, for certain gamemodes, this is 
 
 There should also be smaller tables for reference example Hand Value is derived from a 
 
-b. What fields would you expect to see in this table? */* c. Please also include the data type of each field.
+**b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
 
 ![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png)
@@ -153,23 +153,20 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 - Insurance Float
 
 
-d. What are some challenges you might expect over time as the # of rows increase
-exponentially
+**d. What are some challenges you might expect over time as the # of rows increase exponentially**
 
 ## Using the fields you provide in Q1, populate a hypothetical game history table with the results of your $0.25 Spin & Gold from Part 1 of the assessment.
-a. Provide a sample of a few row entries in the table, using the fields you came up
-with as columns
+**a. Provide a sample of a few row entries in the table, using the fields you came up with as columns**
 
 ## In addition to the game history table, what other tables would you expect to see stored on the backend? Please specify the fields along with their data types.
-a. What would be a suitable primary key to relate the various tables?
+**a. What would be a suitable primary key to relate the various tables?**
 
 ## The United Kingdom marketing manager has sent a request to the BI team to set up Tableau dashboards to monitor newly acquired customers.
-a. Which of the tables in Question 3 would you use? <br />
-b. Describe the dashboard(s) you would create.<br />
-c. What metrics would the marketing manager be interested in to evaluate the
-performance of a marketing campaign to acquire new players?
+**a. Which of the tables in Question 3 would you use?** <br />
+**b. Describe the dashboard(s) you would create.**<br />
+**c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 
 ## The UK team was elated with your acquisition dashboard and has requested a Life Time Value model to project the value of newly signed up customers.
-a. How would you design such a model?<br />
-b. What variables would you use?<br />
-c. How much data would you need to have statistical significance?
+**a. How would you design such a model?**<br />
+**b. What variables would you use?**<br />
+**c. How much data would you need to have statistical significance?**
