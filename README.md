@@ -16,8 +16,12 @@ App is very responsive, loading into games is quick and efficent.
 
 **b. What game features and promotions look interesting?**
 
-## Please share a brief summary detailing your experience, including:
-a. What was your favourite game? Why?  <br />
+Daily freebie is a great way to add engagement to the game. 
+
+Pokercraft is a great tool, allowing players to track their progress and be able to view their playstyle 
+
+## *Please share a brief summary detailing your experience, including:*
+***a. What was your favourite game? Why?**  <br />
 Spin & Gold, All in or Fold
 
 Both of these gamemodes imcoprate two things which I enjoy, spinning wheel, which makes the user feel like he has the potential to win big, which gives more "value" to the users buy-in. I personally prefer Hold'em, and all in or fold allows you to have a simplified game, which interms is more high risk, but the simplicity allows it the be played in very fast rotation. 
@@ -26,20 +30,25 @@ Rush and Cash
 
 This allows the user to move between tables, low down time, is a middle ground between spin & gold and all in or fold, these three gametypes target a variety of players, from simple thinkers, to logical calculators. 
 
-b. What was your least favourite game? Why? <br />
+**b. What was your least favourite game? Why?** <br />
 
 Battle Royale
 
 Like with most battle royale games, the time comitment is larger, meaning you will have to wait for players, and play a multitude of rounds, it simulates a tournament which is a cool concept, however, I personally enjoy more quicker paced games. 
 
 
-c. Were there any surprising or unexpected parts you came across? <br />
-d. Were there parts of the experience you found confusing? 
+**c. Were there any surprising or unexpected parts you came across?** <br />
+
+Was surprising how many mechanics are tide into each game mode: leaderboards, jackpots, insurance, fish buffet, bingo, wheel spins, etc. Allowing users to experience alot of value per game, this type of progression is atune to clicker games, which keep allowing user to have some sort of progression, and is an affective and addictive gameplay loop.  
+
+**d. Were there parts of the experience you found confusing?**
 
 The ticket section is not sorted, and could be compressed and simplified. When you finish a game, and it says play again, it does not specify if you are using tickets, T$, C$ or USD. 
 
-## Your gameplay from Part 1 is stored in our game history database.
-a. What tables would you expect to be populated?<br />
+Insurance per gamemode is different, meaning its up to the user to be more informed onto its use, however, the game makes it very easy for the player to use insurance without explaining it, there should be a checker to quickly explain insurance to users the first time they use it. 
+
+## *Your gameplay from Part 1 is stored in our game history database.*
+**a. What tables would you expect to be populated?** <br />
 Players <br />
 Session History <br />
 Game History <br />
