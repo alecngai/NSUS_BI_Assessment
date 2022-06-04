@@ -1,4 +1,5 @@
-﻿CREATE TABLE "Players" (
+﻿
+CREATE TABLE "Players" (
     "Player_ID" Int  NOT NULL ,
     "Email_Address" String  NOT NULL ,
     "Mobile_Number" String  NOT NULL ,
@@ -59,9 +60,10 @@ CREATE TABLE "Game_History" (
 GO
 
 CREATE TABLE "Hand_History" (
-    "Hand_ID" string  NOT NULL ,
+    "Hand_ID" String  NOT NULL ,
     "Game_ID" Sting  NOT NULL ,
     "Hand_start" Datetime  NOT NULL ,
+    "Hand_end" Datetime  NOT NULL ,
     "Hero_ID" Int  NOT NULL ,
     "Opponent_1_ID" Int  NOT NULL ,
     "Opponent_2_ID" Int  NOT NULL ,
@@ -83,7 +85,7 @@ CREATE TABLE "Hand_History" (
     "River_Action" String  NOT NULL ,
     "Showdown_Action" String  NOT NULL ,
     "Summary" String  NOT NULL ,
-    "Total_pot" float  NOT NULL ,
+    "Total_pot" Float  NOT NULL ,
     "Rake" Float  NOT NULL ,
     "Fee" Float  NOT NULL ,
     "Jackpot" Float  NOT NULL ,

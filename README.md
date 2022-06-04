@@ -20,7 +20,7 @@ Hand History
 b. What fields would you expect to see in this table? */* c. Please also include the data type of each field.
 <br />
 
-![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD_Final.png)
+![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png)
 
 Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Tables.sql) for the tables that will be populated 
 
@@ -72,7 +72,7 @@ Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/b
 
 ### Hand_History as H
 
-- Hand_ID string PK
+- Hand_ID String PK
 - Game_ID Sting FK >- G.Game_ID
 - Hand_start Datetime
 - Hand_end Datetime
