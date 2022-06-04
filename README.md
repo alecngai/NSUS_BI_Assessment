@@ -15,7 +15,7 @@ a. What tables would you expect to be populated?<br />
 Session History <br />
 Game History 
 
-b. What fields would you expect to see in this table? / c. Please also include the data type of each field.
+b. What fields would you expect to see in this table? */* c. Please also include the data type of each field.
 <br />
 
 ### Players as P
@@ -54,14 +54,49 @@ b. What fields would you expect to see in this table? / c. Please also include t
 
 ### Game_History as G
 
+- Game_ID  String PK
 - Session_ID String FK >- S.Session_ID
-- Date Datetime
-- Hand_ID String
+- Game_start Datetime
 - Hole_Card String
 - Hand_Value String
 - Winner String
 - Pot Float
 - Winloss Float
+
+
+### Hand_History as H
+
+- Hand_ID string PK
+- Game_ID Sting FK >- G.Game_ID
+- Hand_start Datetime
+- Hand_end Datetime
+- Hero_ID Int FK >- P.Player_ID
+- Opponent_1_ID Int FK >- P.Player_ID
+- Opponent_2_ID Int FK >- P.Player_ID
+- Opponent_3_ID Int FK >- P.Player_ID
+- Opponent_4_ID Int FK >- P.Player_ID
+- Opponent_5_ID Int FK >- P.Player_ID
+- Stack_Amount_Hero Float
+- Stack_Amount_1 Float
+- Stack_Amount_2 Float
+- Stack_Amount_3 Float
+- Stack_Amount_4 Float
+- Stack_Amount_5 Float
+- Small_blind Int FK >- P.Player_ID
+- Big_blind Int FK >- P.Player_ID
+- Hole_Cards String
+- Pre_Flop_Action String
+- Flop_Action String
+- Turn_Action String
+- River_Action String
+- Showdown_Action String
+- Summary String
+- Total_pot Float
+- Rake Float
+- Fee Float
+- Jackpot Float
+- Bingo Float
+- Board String
 
 
 d. What are some challenges you might expect over time as the # of rows increase
