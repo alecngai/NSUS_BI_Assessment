@@ -281,22 +281,19 @@ We will base our model on past data, and predict / estimate future data, we will
 
 first break down the customers into `lifetime`  <br />
 -<1 month  <br />
-1-3 months <br />
-4-12 months <br />
-1-2 years <br />
+<1-3 months <br />
+<4-12 months <br />
+<1-2 years <br />
 etc 
 
-And from there you can find how long do your players stay in your system.
+And from there you can find how long do your players stay in your system. Within each age range, you can find a LTV per player to know what type of players you want to attract the most. We now have the data of customers and their spending patterns over their lifetime, next is to focus on modeling transaction counts, However, this is difficult because we have a variety of gamemodes with differet methods, we have lose to house, rake, fee, these can be done a multitude of ways, gameplay, staking, betting, casino, live casino, etc. 
 
-Within each age range, you can find a LTV per player to know what type of players you want to attract the most
+A Poisson process, is a simple way of modeling transactions over time, however, another issue with simplicity is they cannot account for certain variables, in this case churn. Therefore we can do a cross product of another model called Survival analysis, this will give us a hybrid probabilistic model. Main points of focus for this model is rate parameter of the Poisson disttribution, and hazard of churn per unit of time. This model will give us a prediction of the wether or not the customer is still within our database at the given time, allowing us to predict if the customer has churned.
 
-Modeling transaction counts
+We can also look at purchases per day, which is a simple calculation of # purchases divded by (max(date) minus min(date)), if we then plot it by purchases per day vs time, we can look and determine if we want examine the data deeper. If there is anonmales 
 
-A Poisson process
-
-Survival analysis
-
-A hybrid probabilistic model
+Using the data acquired above we can ascertain revenue over lifetime of a customer. Next is variable costs, which we must dicsuss with the accounting team, to allow us to gain insight into the company spending habits. 
+Next is variable costs. 
 
 Multilevel models to remove noise
 
