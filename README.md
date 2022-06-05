@@ -58,7 +58,7 @@ I believe there are more tables, for example, a finance table dealing with all t
 
 Another assumption is that there are multiple tables for specific game modes because game modes like Battle Royal require you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have a master table with a column consisting of nulls if the player never plays battle royale. 
 
-For Hand History, I assumed the hand interactions to just be string, however there could be a subtable to store the values of the gameplay, For each 'event' (flop, turn, river) players will have an action, (bet, check, fold, raise) which isn't captured here.
+For Hand History, I assumed the hand interactions to just be string, however there could be a sub-table to store the values of the gameplay, For each 'event' (flop, turn, river) players will have an action, (bet, check, fold, raise) which isn't captured here.
 
 **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
