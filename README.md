@@ -58,7 +58,7 @@ I believe there are more tables, for example, a finance table dealing with all t
 
 Another assumption is that there are multiple tables for specific game modes because game modes like Battle Royal require you to "Kill" other players, and this data needs to be stored. It wouldn't make sense to have a master table with a column consisting of nulls if the player never plays battle royale. 
 
-
+For Hand History, I assumed the hand interactions to just be string, however there could be a subtable to store the values of the gameplay, For each 'event' (flop, turn, river) players will have an action, (bet, check, fold, raise) which isn't captured here.
 
 **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
@@ -173,6 +173,8 @@ Next is data storage; data that is not utilized as frequently can load onto more
 
 There is feature engineering, which would allow us to remove unneeded columns or combine multiple columns into one, which will significantly reduce the size of the database. 
 
+For BI Analyst the main concern is load time/preforamnce, we will have to discuss with the data engineer/architecture to keep in line the demands of the BI team with the structure of the data pipeline. One main way is to cover which data is crucical and critical to the workflow and build upon those data demands. 
+
 
 ## Using the fields you provide in Q1, populate a hypothetical game history table with the results of your $0.25 Spin & Gold from Part 1 of the assessment.
 **a. Provide a sample of a few row entries in the table, using the fields you came up with as columns**
@@ -244,6 +246,8 @@ Customer retention over months since first deposit
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 
 - Monitor progress of business goals, which is to gain market share of that region.
+    - % of players (people vs population)
+    - % of spend/wallet ($ vs $ total)
 
 - Evaluate the ROI of the campaign.
 
@@ -260,7 +264,7 @@ Customer retention over months since first deposit
 - Brand Awareness, we can see if our social media in that region has grown, or on Reddit can trace the IP of users to see if we have more community engagement after the campaign. 
 
 ## The UK team was elated with your acquisition dashboard and has requested a Life Time Value model to project the value of newly signed up customers.
-**a. How would you design such a model?**<br />
+**a. How would you design such a model? // b. What variables would you use?**<br />
 
 Tools: Pandas, Numpy, and Matplotlib, Sci-kit
 
@@ -275,9 +279,26 @@ First calculation is customer lifetime spend
 
 We will base our model on past data, and predict / estimate future data, we will then combine the two sets of data and base our anaysis on the total set of data. The reason we exclude customers who dont have enough history, is it will skew the model, when their lifetime spend is not over, so we will have to do a quick analysis to determine average lifetime of a customer and exclude customers from this date for example, any customer who hasnt been playing on GGpoker for more than 2+ year will be excluded, and we will use another model to predict their values. 
 
+first break down the customers into `lifetime`  <br />
+-<1 month  <br />
+1-3 months <br />
+4-12 months <br />
+1-2 years <br />
+etc 
+
+And from there you can find how long do your players stay in your system.
+
+Within each age range, you can find a LTV per player to know what type of players you want to attract the most
+
 Modeling transaction counts
 
 A Poisson process
+
+Survival analysis
+
+A hybrid probabilistic model
+
+Multilevel models to remove noise
 
 Analyzing companies at the grain of a customer
 
@@ -288,7 +309,7 @@ Estimation [models
 Models, applied to data [uses]]
 
 
-**b. What variables would you use?**<br />
+
 
 Purchases (Revenue) 
 
