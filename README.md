@@ -236,6 +236,10 @@ Another filter shows how much of those deposited funds are lost to the house, ra
 
 This will give us insight into the rate of players' deposits if our game is engaging and enticing enough for them to want to deposit more. In addition, we can see how much money we are making off the UK market that day, per-user base. 
 
+---
+
+Customer retention over months since first deposit 
+
 
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 
@@ -257,5 +261,40 @@ This will give us insight into the rate of players' deposits if our game is enga
 
 ## The UK team was elated with your acquisition dashboard and has requested a Life Time Value model to project the value of newly signed up customers.
 **a. How would you design such a model?**<br />
+
+Tools: Pandas, Numpy, and Matplotlib, Sci-kit
+
+Customer Lifetime Value is defined as revenue over liftime, minus variable costs (including costs of good sold), discounted at a company-specific rate, does not include cusotmer acquisition costs.
+
+First calculation is customer lifetime spend 
+
+- Align all customers by the date of first deposit & first gameplay 
+- Exclude customers who don't have enough history 
+- Calculate cumulative spending to date over time
+- Average across all customers
+
+We will base our model on past data, and predict / estimate future data, we will then combine the two sets of data and base our anaysis on the total set of data. The reason we exclude customers who dont have enough history, is it will skew the model, when their lifetime spend is not over, so we will have to do a quick analysis to determine average lifetime of a customer and exclude customers from this date for example, any customer who hasnt been playing on GGpoker for more than 2+ year will be excluded, and we will use another model to predict their values. 
+
+Modeling transaction counts
+
+A Poisson process
+
+Analyzing companies at the grain of a customer
+
+Initial look at customer lifetime spend [metrics]
+
+Estimation [models
+
+Models, applied to data [uses]]
+
+
 **b. What variables would you use?**<br />
+
+Purchases (Revenue) 
+
+Costs of goods sold (COGS)
+Variable costs
+Customer acquisition cost (CAC)
+
+
 **c. How much data would you need to have statistical significance?**
