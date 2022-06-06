@@ -306,3 +306,22 @@ Factoring these final values together, we can execute the primary LTV model, not
 
 **c. How much data would you need to have statistical significance?**
 
+To determine statistical significance, we must first look at the two samples of data we want to compare. 
+
+First, we must establish our hypothesis, then calculate the P-value to determine if our data is statistically significant or not. 
+
+Using scipy and the stats library we can utilize, there is a describe function that will give us various results. 
+- nobs
+- min/max
+- mean
+- variance
+- skewness
+- kurtosis
+
+It is essential to look at the Gaussian distribution; the data distribution has the same mean and standard deviation. We can use a student's t-Test, a statistical hypothesis test that two independent data. This test is also a library in python which can be utilized in SciPy via ttest_ind(). We can compare alpha, a chosen significance level, with a p-value to determine if the test shows the data is significant. 
+
+If we want to compare multiple data sets, we can change our approach to the analysis of variance test, which we can also utilize the SciPy function f_oneway(); this function gives us p-value and statistics, which we can compare to our decided alpha. 
+
+These are the simple, fast way to determine how much data we would need to reach and have statistical significance. 
+
+We can use Pearson's and Spearman's tests to determine if there is any redundancy in features before moving on to a more in-depth look into calculating statistical significance. Once we have these values, we can create a heatmap to visualize which features have statistical significance to each other. Any feature that has a p-value over 0.05 can be deemed as uncorrelated. 
