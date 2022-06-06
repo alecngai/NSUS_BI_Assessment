@@ -63,7 +63,7 @@ For Hand History, I assumed the hand interactions to just be string, however the
 **b. What fields would you expect to see in this table? / c. Please also include the data type of each field.**
 <br />
 
-![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png)
+![ERD](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/ERD.png?raw=true)
 
 Here is the attached [SQL File](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Tables.sql) for the tables that will be populated 
 
