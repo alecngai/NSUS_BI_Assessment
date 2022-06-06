@@ -272,11 +272,11 @@ This way when we introduce new elements we can see if it affects the churn.
 
 Tools: Pandas, Numpy, Matplotlib, Sci-kit
 
-Customer Lifetime Value is defined as revenue over a lifetime, minus variable costs (including costs of goods sold), discounted at a company-specific rate and did not include customer acquisition costs.
+`Customer Lifetime Value` is defined as `revenue over a lifetime`, minus `variable costs` (including `costs of goods sold`), discounted at a `company-specific rate` and did not include `customer acquisition costs`.
 
-Some customer LTV models include customer acquisition costs; however, in this case, we will choose to ignore it since our app is global, and each region will end up having its own LTV model, so we will simplify and ignore it for now. If we wish to expand the model, we can go forward and include this in the model. 
+Some customer LTV models include `customer acquisition costs`; however, in this case, we will choose to ignore it since our app is global, and each region will end up having its own LTV model, so we will simplify and ignore it for now. If we wish to expand the model, we can go forward and include this in the model. 
 
-The first calculation is customer lifetime spend 
+The first calculation is `customer lifetime spend` 
 
 - Align all customers by the date of first deposit & first gameplay 
 - Exclude customers who don't have enough history 
@@ -294,16 +294,15 @@ etc
 
 And from there, you can find how long your players stay in your system. You can find an LTV per player within each age range to know what type of players you want to attract the most. We now have the data of customers and their spending patterns over their lifetime; next is to focus on modelling transaction counts; however, this is difficult because we have a variety of game modes with different methods; we have lost to house, rake, fee, these can be done a multitude of ways, gameplay, staking, betting, casino, live casino, etc. 
 
-A Poisson process is a simple way of modelling transactions over time. However, another issue with simplicity is they cannot account for certain variables, in this case, churn. Therefore we can do a cross-product of another model called Survival analysis; this will give us a hybrid probabilistic model. The main focus points for this model are the rate parameter of the Poisson distribution and the hazard of churn per unit of time. This model will give us a prediction of whether or not the customer is still within our database at the given time, allowing us to predict if the customer has churned.
+A `Poisson process` is a simple way of modelling transactions over time. However, another issue with simplicity is they cannot account for certain variables, in this case, churn. Therefore we can do a cross-product of another model called `Survival analysis`; this will give us a `hybrid probabilistic model`. The main focus points for this model are the rate parameter of the `Poisson distribution` and the `hazard of churn per unit of time`. This model will give us a prediction of whether or not the customer is still within our database at the given time, allowing us to predict if the customer has churned.
 
-We can also look at purchases per day, which is a simple calculation of # purchases divided by (max(date) minus min(date)); if we then plot it by purchases per day vs time, we can look and determine if we want to examine the data deeper. If there are anomalies, we can split them by the denominator and remove any noise to have a less skewed calculation. 
+We can also look at `purchases per day`, which is a simple calculation of `# of purchases` divided by (`max(date)` minus `min(date)`); if we then plot it by purchases per day vs time, we can look and determine if we want to examine the data deeper. If there are anomalies, we can split them by the denominator and remove any noise to have a less skewed calculation. 
 
-Using the data acquired above, we can ascertain revenue over a customer's lifetime. Next are variable costs, which we must discuss with the accounting team to allow us to gain insight into the company's spending habits. 
-Next is variable costs. 
+Using the data acquired above, we can ascertain `revenue over a customer's lifetime`. Next are `variable costs`, which we must discuss with the accounting team to allow us to gain insight into the company's spending habits. 
 
 These costs can range from servers, ads, employees, rent for locations, yearly event costs, etc. We would then sum up the total and divide it per customer; the number of customers must be the same when calculating customer lifetime spending. We want the averages to be based on a similar notation. 
 
-Factoring these final values together, we can execute the primary LTV model, noting that because GGPoker is so delicate, a simple LTV will not work here, and it makes more sense to split it up by segments of region and lifetime age as well. I would also argue poker players vs live casinos only, etc. Still, I would have to analyze the data to determine if it is enough of a difference in value to validate doing another model. 
+Factoring these final values together, we can execute the primary LTV model, noting that because GGPoker is so complex, a simple LTV will not work here, and it makes more sense to split it up by segments of region and lifetime age as well. I would also argue poker players vs live casinos only, etc. Still, I would have to analyze the data to determine if it is enough of a difference in value to validate doing another model. 
 
 **c. How much data would you need to have statistical significance?**
 
