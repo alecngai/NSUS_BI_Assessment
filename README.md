@@ -242,6 +242,10 @@ This will give us insight into the rate of players' deposits if our game is enga
 
 Customer retention over months since first deposit 
 
+We can look at drop off of customers which we can define having zero interaction or gameplay for a certain period. over months to get an quick understanding of the churn in the UK market. 
+
+This way when we introduce new elements we can see if it affects the churn.
+
 
 **c. What metrics would the marketing manager be interested in to evaluate the performance of a marketing campaign to acquire new players?**
 
@@ -266,53 +270,40 @@ Customer retention over months since first deposit
 ## The UK team was elated with your acquisition dashboard and has requested a Life Time Value model to project the value of newly signed up customers.
 **a. How would you design such a model? // b. What variables would you use?**<br />
 
-Tools: Pandas, Numpy, and Matplotlib, Sci-kit
+Tools: Pandas, Numpy, Matplotlib, Sci-kit
 
-Customer Lifetime Value is defined as revenue over liftime, minus variable costs (including costs of good sold), discounted at a company-specific rate, does not include cusotmer acquisition costs.
+Customer Lifetime Value is defined as revenue over a lifetime, minus variable costs (including costs of goods sold), discounted at a company-specific rate and did not include customer acquisition costs.
 
-First calculation is customer lifetime spend 
+Some customer LTV models include customer acquisition costs; however, in this case, we will choose to ignore it since our app is global, and each region will end up having its own LTV model, so we will simplify and ignore it for now. If we wish to expand the model, we can go forward and include this in the model. 
+
+The first calculation is customer lifetime spend 
 
 - Align all customers by the date of first deposit & first gameplay 
 - Exclude customers who don't have enough history 
 - Calculate cumulative spending to date over time
 - Average across all customers
 
-We will base our model on past data, and predict / estimate future data, we will then combine the two sets of data and base our anaysis on the total set of data. The reason we exclude customers who dont have enough history, is it will skew the model, when their lifetime spend is not over, so we will have to do a quick analysis to determine average lifetime of a customer and exclude customers from this date for example, any customer who hasnt been playing on GGpoker for more than 2+ year will be excluded, and we will use another model to predict their values. 
+We will base our model on past data and predict/estimate future data; we will then combine the two sets of data and base our analysis on the complete data set. The reason we exclude customers who don't have enough history is it will skew the model when their lifetime spend is not over, so we will have to do a quick analysis to determine the average lifetime of a customer and exclude customers from this date, for example, any customer who hasn't been playing on GGPoker for more than 2+ year will be excluded. We will use another model to predict their values. A key component is the UK team wishes to look into newly signed up customers.
 
-first break down the customers into `lifetime`  <br />
+first, break down the customers into `lifetime`  <br />
 -<1 month  <br />
 <1-3 months <br />
 <4-12 months <br />
 <1-2 years <br />
 etc 
 
-And from there you can find how long do your players stay in your system. Within each age range, you can find a LTV per player to know what type of players you want to attract the most. We now have the data of customers and their spending patterns over their lifetime, next is to focus on modeling transaction counts, However, this is difficult because we have a variety of gamemodes with differet methods, we have lose to house, rake, fee, these can be done a multitude of ways, gameplay, staking, betting, casino, live casino, etc. 
+And from there, you can find how long your players stay in your system. You can find an LTV per player within each age range to know what type of players you want to attract the most. We now have the data of customers and their spending patterns over their lifetime; next is to focus on modelling transaction counts; however, this is difficult because we have a variety of game modes with different methods; we have lost to house, rake, fee, these can be done a multitude of ways, gameplay, staking, betting, casino, live casino, etc. 
 
-A Poisson process, is a simple way of modeling transactions over time, however, another issue with simplicity is they cannot account for certain variables, in this case churn. Therefore we can do a cross product of another model called Survival analysis, this will give us a hybrid probabilistic model. Main points of focus for this model is rate parameter of the Poisson disttribution, and hazard of churn per unit of time. This model will give us a prediction of the wether or not the customer is still within our database at the given time, allowing us to predict if the customer has churned.
+A Poisson process is a simple way of modelling transactions over time. However, another issue with simplicity is they cannot account for certain variables, in this case, churn. Therefore we can do a cross-product of another model called Survival analysis; this will give us a hybrid probabilistic model. The main focus points for this model are the rate parameter of the Poisson distribution and the hazard of churn per unit of time. This model will give us a prediction of whether or not the customer is still within our database at the given time, allowing us to predict if the customer has churned.
 
-We can also look at purchases per day, which is a simple calculation of # purchases divded by (max(date) minus min(date)), if we then plot it by purchases per day vs time, we can look and determine if we want examine the data deeper. If there is anonmales 
+We can also look at purchases per day, which is a simple calculation of # purchases divided by (max(date) minus min(date)); if we then plot it by purchases per day vs time, we can look and determine if we want to examine the data deeper. If there are anomalies, we can split them by the denominator and remove any noise to have a less skewed calculation. 
 
-Using the data acquired above we can ascertain revenue over lifetime of a customer. Next is variable costs, which we must dicsuss with the accounting team, to allow us to gain insight into the company spending habits. 
+Using the data acquired above, we can ascertain revenue over a customer's lifetime. Next are variable costs, which we must discuss with the accounting team to allow us to gain insight into the company's spending habits. 
 Next is variable costs. 
 
-Multilevel models to remove noise
+These costs can range from servers, ads, employees, rent for locations, yearly event costs, etc. We would then sum up the total and divide it per customer; the number of customers must be the same when calculating customer lifetime spending. We want the averages to be based on a similar notation. 
 
-Analyzing companies at the grain of a customer
-
-Initial look at customer lifetime spend [metrics]
-
-Estimation [models
-
-Models, applied to data [uses]]
-
-
-
-
-Purchases (Revenue) 
-
-Costs of goods sold (COGS)
-Variable costs
-Customer acquisition cost (CAC)
-
+Factoring these final values together, we can execute the primary LTV model, noting that because GGPoker is so delicate, a simple LTV will not work here, and it makes more sense to split it up by segments of region and lifetime age as well. I would also argue poker players vs live casinos only, etc. Still, I would have to analyze the data to determine if it is enough of a difference in value to validate doing another model. 
 
 **c. How much data would you need to have statistical significance?**
+
