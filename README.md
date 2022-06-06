@@ -42,7 +42,7 @@ It was surprising how many mechanics are tied into each game mode: leaderboards,
 
 **d. Were there parts of the experience you found confusing?**
 
-The [ticket section](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/Tickets.png) is not sorted and could be compressed and simplified. When you finish a game and say play again, it does not specify if you are using tickets, *T$*, *C$* or USD. 
+The [ticket section](https://raw.githubusercontent.com/alecngai/NSUS_BI_Assessment/main/Resources/Tickets.png?token=GHSAT0AAAAAABRU4FZCCCDJPU7Z3Y7RWEDYYU6F3SA) is not sorted and could be compressed and simplified. When you finish a game and say play again, it does not specify if you are using tickets, *T$*, *C$* or USD. 
 
 Insurance per game mode is different, meaning it's up to the user to be more informed about its use; however, the game makes it very easy for the player to use insurance without explaining it. There should be a checker to quickly illustrate insurance to users the first time they use it. 
 
