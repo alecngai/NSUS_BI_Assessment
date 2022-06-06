@@ -251,7 +251,7 @@ This way when we introduce new elements we can see if it affects the churn.
 
 - Monitor progress of business goals, which is to gain market share of that region.
     - % of players (people vs population)
-    - % of spend/wallet ($ vs $ total)
+    - % of spend/wallet (*$* vs *$* total)
 
 - Evaluate the ROI of the campaign.
 
