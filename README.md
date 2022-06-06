@@ -324,4 +324,4 @@ If we want to compare multiple data sets, we can change our approach to the anal
 
 These are the simple, fast way to determine how much data we would need to reach and have statistical significance. 
 
-For a more indepth view we can use Pearson's and Spearman's tests to determine if there is any redundancy in features before moving on to a more in-depth look into calculating statistical significance. Once we have these values, we can create a heatmap to visualize which features have statistical significance to each other. Any feature that has a p-value over 0.05 can be deemed as uncorrelated.
+For a more indepth view we can use Pearson's and Spearman's tests to determine if there is any redundancy in features before moving on to look into calculating statistical significance. Once we have these values, we can create a heatmap to visualize which features have statistical significance to each other. Any feature that has a p-value over 0.05 can be deemed as uncorrelated.
