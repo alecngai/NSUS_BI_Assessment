@@ -318,10 +318,10 @@ Using scipy and the stats library we can utilize, there is a describe function t
 - skewness
 - kurtosis
 
-It is essential to look at the Gaussian distribution; the data distribution has the same mean and standard deviation. We can use a student's t-Test, a statistical hypothesis test that two independent data. This test is also a library in python which can be utilized in SciPy via ttest_ind(). We can compare alpha, a chosen significance level, with a p-value to determine if the test shows the data is significant. 
+It is essential to look at the Gaussian distribution; the data distribution has the same mean and standard deviation. We can use a student's t-Test, a statistical hypothesis test that two independent data. This test is also a library in python which can be utilized in SciPy via ttest_ind(). We can compare alpha, a chosen significance level, with a p-value to determine if the test shows the data is significant, which in industry standard is 0.05. However, this can be adjusted depending on the hypothesis and requirements of the analysis. 
 
 If we want to compare multiple data sets, we can change our approach to the analysis of variance test, which we can also utilize the SciPy function f_oneway(); this function gives us p-value and statistics, which we can compare to our decided alpha. 
 
 These are the simple, fast way to determine how much data we would need to reach and have statistical significance. 
 
-We can use Pearson's and Spearman's tests to determine if there is any redundancy in features before moving on to a more in-depth look into calculating statistical significance. Once we have these values, we can create a heatmap to visualize which features have statistical significance to each other. Any feature that has a p-value over 0.05 can be deemed as uncorrelated. 
+We can use Pearson's and Spearman's tests to determine if there is any redundancy in features before moving on to a more in-depth look into calculating statistical significance. Once we have these values, we can create a heatmap to visualize which features have statistical significance to each other. Any feature that has a p-value over 0.05 can be deemed as uncorrelated.
