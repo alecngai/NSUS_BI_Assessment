@@ -306,7 +306,7 @@ Factoring these final values together, we can execute the primary LTV model, not
 
 **c. How much data would you need to have statistical significance?**
 
-To determine statistical significance, we must first look at the two samples of data we want to compare. 
+To determine statistical significance, we must first look at the two samples of data we want to compare, depending on the type of datasets, what kind of features and data types; then, we must analyze to understand further how much data we need. Depending on the situation, even 30 rows of data can be enough statistical significance. Therefore, we must delve further into data to understand our goal. 
 
 First, we must establish our hypothesis, then calculate the P-value to determine if our data is statistically significant or not. 
 
