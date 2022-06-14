@@ -31,10 +31,12 @@ I believed the best way to answer this question is to create an ERD (Entity Rela
 
 - Challenging assumptions (How do I know this is true? What if I thought the opposite?)
 
-1) I based my logic and going through the different gamemodes on pokercraft and saw each session table, game history, and hand history has different columns and structure. Here is a specific example of spin and gold and all in or fold.
+I based my logic and going through the different gamemodes on pokercraft and saw each session table, game history, and hand history has different columns and structure. Here is a specific example of spin and gold and all in or fold.
 
+![1](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Resources/Thought%20Process/1.png)
 
-![1]()
+If the opposite is true, then that means GGPoker is very inffecinet at storing data and waste alot of processing power and time. Because you would have to go through my more columns to find the data in which you need for processing, for exmaple the reports page on Core which is a live model, and updated real time, or for any other live dashboards we need to make to monitor systems. 
+
 
 - Looking for evidence (How can I back this up? What are the sources?)
 - Considering alternative perspectives (What might others think? How do I know I am correct?)
