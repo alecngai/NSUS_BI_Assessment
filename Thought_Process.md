@@ -37,8 +37,15 @@ I based my logic and going through the different gamemodes on pokercraft and saw
 
 If the opposite is true, then that means GGPoker is very inffecinet at storing data and waste alot of processing power and time. Because you would have to go through my more columns to find the data in which you need for processing, for exmaple the reports page on Core which is a live model, and updated real time, or for any other live dashboards we need to make to monitor systems. 
 
-
 - Looking for evidence (How can I back this up? What are the sources?)
+
+![2](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Resources/Thought%20Process/2.png)
+
+Looking into pokercraft and the elements, we can see that there is indeed multiple tables for each section, Session, Game, and Hand History. To do this I thought to myself if I wanted to scrape my Pokercraft data, with a webscrapper, how would I handle the issue.  
+
+
+My evidence is the way ggpoker pokercraft presents its data, it is extremely fast and reactive, from this alon
+
 - Considering alternative perspectives (What might others think? How do I know I am correct?)
 - Examining consequences and implications (What if I am wrong? What are the consequences if I am?)
 - Questioning the original questions (Why did I think that? Was I correct? What conclusions can I draw from the reasoning process?)
