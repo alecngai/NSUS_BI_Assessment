@@ -3,9 +3,6 @@ First Principles Thought Process
 - Clarifying your thinking and explaining the origins of your ideas (Why do I think this? What exactly do I think?)
 - Challenging assumptions (How do I know this is true? What if I thought the opposite?)
 - Looking for evidence (How can I back this up? What are the sources?)
-- Considering alternative perspectives (What might others think? How do I know I am correct?)
-- Examining consequences and implications (What if I am wrong? What are the consequences if I am?)
-- Questioning the original questions (Why did I think that? Was I correct? What conclusions can I draw from the reasoning process?)
 
 a. What tables would you expect to be populated?
 
@@ -41,13 +38,8 @@ If the opposite is true, then that means GGPoker is very inffecinet at storing d
 
 ![2](https://github.com/alecngai/NSUS_BI_Assessment/blob/main/Resources/Thought%20Process/2.png)
 
-Looking into pokercraft and the elements, we can see that there is indeed multiple tables for each section, Session, Game, and Hand History. To do this I thought to myself if I wanted to scrape my Pokercraft data, with a webscrapper, how would I handle the issue.  
+Looking into pokercraft and the elements, we can see that there is indeed multiple tables for each section, Session, Game, and Hand History. To do this I thought to myself if I wanted to scrape my Pokercraft data, with a webscrapper, how would I handle the issue. Which would be to observe how the data is loaded in to the webpage. 
 
-
-My evidence is the way ggpoker pokercraft presents its data, it is extremely fast and reactive, from this alon
-
-- Considering alternative perspectives (What might others think? How do I know I am correct?)
-- Examining consequences and implications (What if I am wrong? What are the consequences if I am?)
-- Questioning the original questions (Why did I think that? Was I correct? What conclusions can I draw from the reasoning process?)
+My evidence is the way ggpoker pokercraft presents its data, it is extremely fast and reactive, from this alone, and how fast each table loads I know there is not much processing done on the players data before presnting it to the player. My account does not have lots of gameplay, so this could be a factor so to double check I also checked other players pokercraft data, and compared their load in times to verify my assumption. 
 
 I believe the question was to show my understanding of data structure and schema, as a BI analyst I would need to have a good understanding of how data works in order to translate it into a visual aid for our clients. 
